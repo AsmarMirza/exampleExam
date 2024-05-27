@@ -1,0 +1,324 @@
+.homeContainer{
+    position: relative;
+    .heroSection{
+background-image: url('https://preview.colorlib.com/theme/pulse/img/slider/slider-1.jpg.webp');
+background-size: cover;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+        .heroBox{
+          color: white;
+          .heroHeading{
+            font-size: clamp(2.5rem, -2.1875rem + 15vw, 6.25rem);
+            .point{
+                color: gold;
+            }
+          }
+          .heroText{
+            text-align: end;
+          }
+        }
+    }
+}
+
+// welcome section
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  gap: 40px;
+  .welcomeHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+  }
+    .welcomeHeading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        
+        .welcomeHeading1{
+            font-size: 50px;
+        }
+        .passWelcome{
+            border-bottom: 2px solid gold;
+            width: 300px;
+           
+        }
+    }
+    .welcomeBoxes{
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+       
+        .welcomeBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            max-width: 320px;
+            text-align: center;
+            line-height: 27px;
+            font-weight: bold;
+            .welcomeYear{
+                font-size: 30px;
+            }
+            .welcomeText{
+                color: rgb(121, 117, 117);
+            }
+        }
+    }
+
+}
+@media only screen and (max-width: 991px) {
+    .welcome{
+        .welcomeHeading{
+            margin-top: 50px;
+    .passWelcome{
+        width: 150px;
+       
+    }
+}
+}
+}
+
+@media only screen and (max-width: 767px) {
+    .welcome{
+        .welcomeHeading{
+    .passWelcome{
+        display: none;
+       
+    }
+}
+.welcomeBoxes{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    .welcomeBox{
+        max-width: 100%;
+    }
+}
+
+}
+}
+
+// Test Section
+.testSection{
+    background-image: url("https://preview.colorlib.com/theme/pulse/img/review-bg.jpg.webp");
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+   .testHeader{
+    align-items: center;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    width: 100%;
+    #bigIcon{
+        font-size: 40px;
+    }
+    .testHeading{
+        font-size: 50px;
+    }
+    .testText{
+        line-height: 32px;
+        padding: 40px;
+        font-weight: bold;
+        
+    }
+    .testEnd{
+        text-align: center;
+        font-weight: bold;
+    }
+    .testTed{
+        color: gold;
+    }
+   }
+    .testDif{
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        .testHeader{
+            font-size: 50px;
+           
+        }
+        .testPass{
+            border: 1px solid gold;
+            width: 300px;
+        }
+    }
+
+}
+@media only screen and (max-width: 991px){
+    .testSection{
+        
+        .testDif{
+            .testPass {
+              width: 100px;
+            }
+    }
+    
+    }
+}
+
+@media only screen and (max-width: 579px){
+.testSection{
+    .testHeader{
+        padding: 0px;
+        margin-top: 50px;
+        .testText{
+            line-height: 32px;
+            font-weight: bold;
+            width: 100%;
+        }
+    }
+    .testDif{
+        .testPass {
+            display: none;
+        }
+}
+
+}
+}
+#icon{
+    font-size: 30px;
+    color: gold;
+}
+
+// menu section
+
+.menuSection{
+    background-image: url("https://preview.colorlib.com/theme/pulse/img/menu-bg.jpg.webp");
+    background-size: cover;
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+    padding: 40px;
+   width: 100%;
+   .menuHero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+   }
+    .menuHeader{
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      
+        .menuHeading{
+            font-size: 60px;
+        }
+        .menuPass{
+            border-bottom: 2px solid gold;
+            width: 300px;
+            
+        }
+    }
+}
+.menuMiddle
+{
+  
+    display: flex;
+   cursor: pointer;
+    gap: 40px;
+    font-weight: bold;
+    .menuGold{
+        color: gold;
+    }
+   
+}
+.menuFooter{
+    
+   .menu{
+    width: 100%;
+    font-size: 17px;
+    line-height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    .menuBox{
+        max-width: 500px;
+    }
+    .footerText{
+        font-size: 13px;
+        color: rgb(110, 109, 109);
+    }
+   }
+    
+}
+
+
+@media only screen and (max-width: 991px){
+    .menuSection{
+      .menuHeader{
+        .menuPass{
+            width: 150px;
+        }
+      }
+    }
+    
+    }
+
+@media only screen and (max-width: 703px){
+.menuSection{
+  .menuHeader{
+    .menuPass{
+        display: none;
+    }
+  }
+}
+
+}
+
+@media only screen and (max-width: 421px){
+    .menuSection{
+    .menuHeader{
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      
+        .menuHeading{
+            font-size: 45px;
+        }
+    }
+}
+    
+    .menuMiddle
+    {
+      
+        display: flex;
+       cursor: pointer;
+        gap: 20px;
+        font-weight: bold;
+        .menuGold{
+            color: gold;
+        }
+       
+    }
+    }
+
+    #bigIcon{
+        font-size: 40px;
+    }

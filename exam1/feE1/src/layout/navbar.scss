@@ -1,0 +1,45 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(111, 110, 110);
+   width: 100%;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    color: white;
+    .myUl{
+        display: flex;
+        gap: 30px;
+        font-size: 20px;
+       font-weight: bold;
+       cursor: pointer;
+    }
+    .contact{
+        display: flex;
+        gap: 10px;
+        .diftextNav{
+            color: gold;
+        }
+    }
+    .bar{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .navbar{
+        .myUl{
+            display: none;
+        }
+        .bar{
+            display: block;
+        }
+        .contact{
+            display: none;
+        }
+    }
+}
